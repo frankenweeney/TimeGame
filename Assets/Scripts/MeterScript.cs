@@ -1,16 +1,25 @@
-using UnityEngine;
 
+using UnityEngine;
+using UnityEngine.UI;
 public class TimerScript : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public float gameDuration = 600f;
+    public Image timeMeter;
+    public float waterDuration = 20f;
+    public Image waterMeter;
+    public float sunDuration = 20f;
+    public Image sunMeter;
     void Start()
     {
-        
+        timeMeter.fillAmount = 1;
+        waterMeter.fillAmount = 1;
+        sunMeter.fillAmount = 1;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        timeMeter.fillAmount -= Time.deltaTime / gameDuration;
+        waterMeter.fillAmount -= Time.deltaTime / waterDuration;
+        sunMeter.fillAmount -= Time .deltaTime / sunDuration;
     }
 }
