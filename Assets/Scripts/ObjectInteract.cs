@@ -1,14 +1,20 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class ObjectInteract : MonoBehaviour
 {
     public Rigidbody2D rb;
     private Vector3 offset;
     private float zCoord;
-
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void Update()
+    {
+        
+
     }
 
     void OnMouseDown()
