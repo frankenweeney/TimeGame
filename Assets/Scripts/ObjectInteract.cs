@@ -1,24 +1,33 @@
 using UnityEngine;
-using static UnityEngine.Rendering.DebugUI.Table;
 
 public class ObjectInteract : MonoBehaviour
 {
-    public Camera mainCamera;
+    public Rigidbody2D rb;
+    private Vector3 offset;
+    private float zCoord;
 
-    private void Update()
+    void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
     }
 
-    private void OnMouseDown()
+    void OnMouseDown()
     {
-       
+        zCoord = Camera.main.WorldToScreenPoint(transform.position).z;
+        offset = transform.position - GetMouseWorldPosition();
     }
 
-    private void OnMouseDrag()
+    void OnMouseDrag()
     {
-        Vector3 mouseWorldPos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-        mouseWorldPos.z = transform.position.z;
-        transform.position = mouseWorldPos;
+        rb.MovePosition(GetMouseWorldPosition() + offset);
     }
+
+    private Vector3 GetMouseWorldPosition()
+    {
+        Vector3 mousePoint = Input.mousePosition;
+        mousePoint.z = zCoord; // Maintain object's Z position
+        return Camera.main.ScreenToWorldPoint(mousePoint);
+    }
+
 
 }

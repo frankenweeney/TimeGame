@@ -601,7 +601,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2495a0be1bb9a1b4886cf533e49acb5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectInteract
-  mainCamera: {fileID: 519420031}
+  rb: {fileID: 783577908}
+  offset: {x: 0, y: 0, z: 0}
+  dragging: 0
 --- !u!61 &783577907
 BoxCollider2D:
   m_ObjectHideFlags: 0
