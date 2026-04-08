@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 5db4ae36ab7b7ab4cb5344d6d2561dff
+guid: 3b4f290e8fd9294409a163dcee2e28f9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -122650991847657159
-    second: flaming_0
-  - first:
-      213: -3104794559678232694
-    second: flaming_1
-  - first:
-      213: -8558477412911359262
-    second: flaming_2
-  - first:
-      213: 7937188375030952950
-    second: flaming_3
+      213: -3257944332982808938
+    second: Screenshot 2026-04-07 233052_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -187,13 +178,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: flaming_0
+      name: Screenshot 2026-04-07 233052_0
       rect:
         serializedVersion: 2
-        x: 444
-        y: 116
-        width: 1145
-        height: 971
+        x: 0
+        y: 0
+        width: 1500
+        height: 170
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,74 +193,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 931329f92914c4ef0800000000000000
-      internalID: -122650991847657159
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: flaming_1
-      rect:
-        serializedVersion: 2
-        x: 993
-        y: 159
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a8740d14ccd89e4d0800000000000000
-      internalID: -3104794559678232694
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: flaming_2
-      rect:
-        serializedVersion: 2
-        x: 1291
-        y: 150
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2ead631432e2a3980800000000000000
-      internalID: -8558477412911359262
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: flaming_3
-      rect:
-        serializedVersion: 2
-        x: 1292
-        y: 174
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6f3741926ce862e60800000000000000
-      internalID: 7937188375030952950
+      spriteID: 69e0096f3e479c2d0800000000000000
+      internalID: -3257944332982808938
       vertices: []
       indices: 
       edges: []
@@ -278,7 +203,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -288,10 +213,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      flaming_0: -122650991847657159
-      flaming_1: -3104794559678232694
-      flaming_2: -8558477412911359262
-      flaming_3: 7937188375030952950
+      Screenshot 2026-04-07 233052_0: -3257944332982808938
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

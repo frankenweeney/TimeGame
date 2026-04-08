@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a8c49b76ea580d948b0348557d42040e
+guid: f880bacc306366948b0f407fdb87735f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6328239514785992431
-    second: MoonSky_0
+      213: 6011505033141050927
+    second: plantFood_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -178,13 +178,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MoonSky_0
+      name: plantFood_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1280
-        height: 720
+        x: 167
+        y: 166
+        width: 1761
+        height: 1249
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,8 +193,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 111379390b39d28a0800000000000000
-      internalID: -6328239514785992431
+      spriteID: f2e58d13af72d6350800000000000000
+      internalID: 6011505033141050927
       vertices: []
       indices: 
       edges: []
@@ -213,7 +213,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MoonSky_0: -6328239514785992431
+      plantFood_0: 6011505033141050927
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

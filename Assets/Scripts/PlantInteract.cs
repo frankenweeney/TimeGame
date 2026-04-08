@@ -1,9 +1,6 @@
-using System;
 using System.Collections;
-using System.Drawing;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEngine.GraphicsBuffer;
 using Random = UnityEngine.Random;
 
 public class PlantInteract : MonoBehaviour
@@ -15,14 +12,13 @@ public class PlantInteract : MonoBehaviour
     public float startTime;
     public float timer;
     private bool isBeingWatered;
-    private bool inSunlight;
 
     public float gameDuration = 300f;
     public Image timeMeter;
     public float waterDuration = 20f;
     public Image waterMeter;
-    public float sunDuration = 30f;
-    public Image sunMeter;
+    public float hungerDuration = 45;
+    public Image HungerMeter;
     public SpriteRenderer plant;
     public Sprite plant1;
     public Sprite plant2;
@@ -30,20 +26,16 @@ public class PlantInteract : MonoBehaviour
     public Sprite plant4;
     public Sprite plant5;
     public float waterProgression = 0f;
-    public float sunProgression = 0f;
-
-    private Vector3 originalPosition;
-    private Coroutine shakeCoroutine;
+    public float hungerProgression = 0f;
+    public SpriteRenderer stomach;
+    public Color color;
 
     public Transform bottleTransform;
     public Transform plantDirection;
     public float rotationOffset = 0f;
 
-    void Awake()
-    {
-        // Store the starting position
-        originalPosition = transform.localPosition;
-    }
+    public GameObject plantFood;
+    
 
     void Start()
     {
@@ -56,11 +48,13 @@ public class PlantInteract : MonoBehaviour
         plant.sprite = plant1;
         timeMeter.fillAmount = 1;
         waterMeter.fillAmount = 1;
-        sunMeter.fillAmount = 1;
+        HungerMeter.fillAmount= 1;
+        
         waterProgression = 0f;
-        sunProgression = 0f;
+        hungerProgression= 0f;
         isBeingWatered = false;
-        inSunlight = false;
+        color.a = 0f;
+        stomach.enabled = false;
 
         startTime = Time.time;
         timer = startTime;
@@ -70,38 +64,27 @@ public class PlantInteract : MonoBehaviour
     void Update()
     {
         waterProgression = isBeingWatered ? -2 * Time.deltaTime : Time.deltaTime ;
-        sunProgression = inSunlight ? -2 * Time.deltaTime : Time.deltaTime;
         timeMeter.fillAmount -= Time.deltaTime / gameDuration;
         waterMeter.fillAmount -= waterProgression / waterDuration;
-        sunMeter.fillAmount -= sunProgression / sunDuration;
         waterMeter.fillAmount = Mathf.Clamp(waterMeter.fillAmount, 0, 1);
         timer += Time.deltaTime;
+        hungerProgression = Time.deltaTime;
+        HungerMeter.fillAmount -= hungerProgression / hungerDuration;
 
-        if (waterMeter.fillAmount < 0.2)
+        if (HungerMeter.fillAmount >= 0.5f)
         {
-            StartShake(0.5f, 0.05f);
+            color.a = 0f;
         }
-        if (waterMeter.fillAmount < 0.5 && waterMeter.fillAmount > 0.2)
+        if (HungerMeter.fillAmount < 0.5 && HungerMeter.fillAmount > 0.2)
         {
-
+            color.a = 0.5f;
+            stomach.enabled = true;
         }
-        if (waterMeter.fillAmount > 0.5)
+        if (HungerMeter.fillAmount <= 0.2)
         {
-
+            color.a = 1f;
         }
 
-        if (sunMeter.fillAmount < 0.2)
-        {
-
-        }
-        if (sunMeter.fillAmount < 0.5 && waterMeter.fillAmount > 0.2)
-        {
-
-        }
-        if (sunMeter.fillAmount > 0.5)
-        {
-
-        }
 
         if (timer >= 240)
         {
@@ -133,8 +116,13 @@ public class PlantInteract : MonoBehaviour
 
             water.Play();
             isBeingWatered = true;
-
-            
+        }
+        if (other.gameObject.name == "plantFood")
+        {
+            Destroy(plantFood);
+            GameObject clone= Instantiate(plantFood, new Vector2(-4.27f, 6f), Quaternion.identity);
+            hungerProgression = 0;
+            HungerMeter.fillAmount = 1;
         }
     }
 
@@ -148,37 +136,7 @@ public class PlantInteract : MonoBehaviour
         }
     }
 
-    public void StartShake(float duration, float magnitude)
-    {
-        // Stop any ongoing shake before starting a new one
-        if (shakeCoroutine != null)
-        {
-            StopCoroutine(shakeCoroutine);
-            transform.localPosition = originalPosition;
-        }
-
-        shakeCoroutine = StartCoroutine(Shake(duration, magnitude));
-    }
-
-    private IEnumerator Shake(float duration, float magnitude)
-    {
-        float elapsed = 0f;
-
-        while (elapsed < duration)
-        {
-            float offsetX = Random.Range(-1f, 1f) * magnitude;
-            float offsetY = Random.Range(-1f, 1f) * magnitude;
-
-            transform.localPosition = originalPosition + new Vector3(offsetX, offsetY, 0f);
-
-            elapsed += Time.deltaTime;
-            yield return null;
-        }
-
-        // Reset position
-        transform.localPosition = originalPosition;
-        shakeCoroutine = null;
-    }
+   
 
     public void PointTowards()
     {

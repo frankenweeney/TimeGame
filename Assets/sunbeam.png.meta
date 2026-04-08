@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: f7c90163174cfbe418ea395b2cf6cc88
+guid: 65cfe71acb0b63c479f2de49b03aa31b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7911961658614496302
-    second: Screenshot 2026-03-26 144050_0
+      213: 3373103034739813184
+    second: sunbeam_0
+  - first:
+      213: 5774822011769329624
+    second: sunbeam_1
+  - first:
+      213: -996868272061265033
+    second: sunbeam_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -178,13 +184,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Screenshot 2026-03-26 144050_0
+      name: sunbeam_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 858
-        height: 102
+        x: 50
+        y: 67
+        width: 1688
+        height: 1250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,8 +199,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e2c3a3a853feccd60800000000000000
-      internalID: 7911961658614496302
+      spriteID: 04b6570b65bafce20800000000000000
+      internalID: 3373103034739813184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sunbeam_1
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 237
+        width: 1802
+        height: 1132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d71e9cf50a442050800000000000000
+      internalID: 5774822011769329624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sunbeam_2
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 491
+        width: 1828
+        height: 944
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77b4ee396996a22f0800000000000000
+      internalID: -996868272061265033
       vertices: []
       indices: 
       edges: []
@@ -203,7 +253,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -213,7 +263,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Screenshot 2026-03-26 144050_0: 7911961658614496302
+      sunbeam_0: 3373103034739813184
+      sunbeam_1: 5774822011769329624
+      sunbeam_2: -996868272061265033
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

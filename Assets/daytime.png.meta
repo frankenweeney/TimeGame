@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 39c9393361a80e44493d00c2dc7720b8
+guid: 797d78a0af9963d4588ba7441dadc3c0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4793436657755181602
-    second: SunsetSky_0
+      213: 9046599143814407293
+    second: daytime_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -178,13 +178,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SunsetSky_0
+      name: daytime_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 736
-        height: 552
+        x: 828
+        y: 169
+        width: 1155
+        height: 1174
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,8 +193,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eddaa29a1ca4a7db0800000000000000
-      internalID: -4793436657755181602
+      spriteID: d7429688df9fb8d70800000000000000
+      internalID: 9046599143814407293
       vertices: []
       indices: 
       edges: []
@@ -203,7 +203,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -213,7 +213,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SunsetSky_0: -4793436657755181602
+      daytime_0: 9046599143814407293
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c4c69caf72a60a6449f3b90fb30a8f99
+guid: 4ac8589febedfab42839ecf693a19606
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8915717465159582665
-    second: SunnySky_0
+      213: 7757420160248012790
+    second: droplet_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -178,13 +178,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SunnySky_0
+      name: droplet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1470
-        height: 980
+        x: 16
+        y: 19
+        width: 170
+        height: 242
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,8 +193,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9c3459c0ccdfabb70800000000000000
-      internalID: 8915717465159582665
+      spriteID: 6ff59010984e7ab60800000000000000
+      internalID: 7757420160248012790
       vertices: []
       indices: 
       edges: []
@@ -203,7 +203,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -213,7 +213,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SunnySky_0: 8915717465159582665
+      droplet_0: 7757420160248012790
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
